@@ -1,0 +1,252 @@
+*{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: sans-serif;
+}
+
+section{
+               position: relative;
+               width: 100%;
+               min-height: 100vh;
+               padding: 100px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background: #9a80af;
+               transition: 0,5s;
+}
+
+header{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               padding:20px 100px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+}
+
+header .logo{
+               max-width: 185px;
+               position: relative;
+}
+
+header ul{
+               position: relative;
+               display: flex;
+}
+
+header ul li{
+               list-style: none;
+               margin-top: 5px;
+}
+
+header ul li a{
+               display: inline-block;
+               color: #fff;
+               margin: 40px;
+               text-decoration: none;
+               font-weight: bold;
+}
+
+.header{
+               position: relative;
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+}
+
+.header .texBox{
+               position: relative;
+               width: 600px;
+}
+
+.content .texBox h2{
+               color: #fff;
+               font-size: 3em;
+               line-height: 1,5em;
+               font-weight: 900;
+               text-transform: uppercase;
+               max-width: 500px;
+}
+
+.content .texBox h2 span{
+               font-size: 70px;
+}
+
+.content .texBox p{
+               max-width: 500px;
+               color: #fff;
+}
+
+.content .texBox a{
+               display: inline-block;
+               margin-top: 20px;
+               padding: 8px 20px;
+               background: #fff;
+               border-radius: 40px;
+               font-weight: 400;
+               letter-spacing: 1px;
+               text-decoration: none;
+               text-transform: uppercase;
+}
+
+.content .imgBox{
+               width: 600px;
+               display: flex;
+               padding-right: 50px;
+               justify-content: flex-end;
+               margin-top: 50px;
+}
+
+.content .imgBox img{
+               max-width: 190px;
+}
+
+.thumb{
+               position: absolute;
+               left: 50%;
+               bottom: 20px;
+               transform: translateX(-50%);
+               display: flex;
+}
+
+.thumb li{
+               list-style: none;
+               display: inline-block;
+               margin: 0px 20px;
+               cursor: pointer;
+               transition: 0.5s;
+}
+
+
+.thumb li:hover{
+               transform: translateY(-20px);
+}
+
+.thumb li img{
+               max-width: 40px;
+}
+
+.sosialmedia{
+               position: absolute;
+               top: 50%;
+               right: 30px;
+               transform: translateY(-50%);
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+}
+
+.sosialmedia li{
+               list-style:none;
+}
+
+.sosialmedia li a{
+               display: inline-block;
+               color: #fff;
+               margin: 9px 0;
+               transform: scale(1.5);
+}
+
+
+       /* Style for the product title */
+       .product-title {
+               text-align: center;
+               font-size: 2.5em;
+               margin-bottom: 30px;
+               color: #333;
+               text-transform: uppercase;
+           }
+           
+           /* Style for the product section */
+           .Product-page {
+               background-color: #5e1f1f7a;
+               padding-top: 50px; /* Tambahkan padding di atas agar ada jarak */
+           }
+           
+           /* Style for the product list */
+           .product-list {
+               display: flex;
+               justify-content: center;
+               flex-wrap: wrap;
+               gap: 20px;
+               padding: 20px;
+               cursor: pointer;
+           }
+           
+           /* Style for each product card */
+           .product {
+               border: 1px solid #ddd;
+               border-radius: 8px;
+               overflow: hidden;
+               width: 300px;
+               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+               background-color: #fff;
+               margin-top: 10%;
+               padding: 30px;
+           }
+           
+           /* Style for the product image */
+           .product-image {
+               height: 400px;
+               background-size: cover;
+               background-position: center;
+           }
+           
+           /* Style for product information */
+           .product-info {
+               padding: 15px;
+               text-align: center;
+           }
+           
+           /* Style for product name */
+           .product-info h2 {
+               font-size: 1.5em;
+               margin: 10px 0;
+           }
+           
+           /* Style for product description */
+           .product-info .description {
+               font-size: 15px;
+               color: #666;
+               margin: 10px 0;
+           }
+           
+           /* Style for product price */
+           .product-info .price {
+               font-size: 1.2em;
+               color: #333;
+               margin: 10px 0;
+               font-weight: bold;
+           }
+           
+           /* Style for the product details link */
+           .product-info a {
+               display: inline-block;
+               margin-top: 10px;
+               color: #007BFF;
+               text-decoration: none;
+           }
+           
+           .product-info a:hover {
+               text-decoration: underline;
+           }
+           
+           /* Responsive design for smaller screens */
+           @media (max-width: 768px) {
+               .product {
+                   width: calc(50% - 20px);
+               }
+           }
+           
+           @media (max-width: 480px) {
+               .product {
+                   width: 100%;
+               }
+           }
+           
